@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(e){
+	console.log("Jquery loaded");
+	$("#submit").on('click', function(e){
+		e.preventDefault();
+		
+		let formData = {};
+		let file = $("#file").val();
+		console.log(file);
+		
+		let url = "https://sage-dot-two-dev.herokuapp.com/amazon/api/file/websiteimageupload";
+		
+		$.ajax({
+			
+		});
+	});
+});
+</script>
+</head>
+<body>
+Welcome
+
+<form>
+<input type="file" id="file" required>
+<button id="submit" >Submit</button>
+</form>
+</body>
+</html>
